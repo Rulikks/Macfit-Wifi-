@@ -1,0 +1,104 @@
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.wifi-access-container {
+  text-align: center;
+  padding: 20px;
+  border: 3px solid #fff; /* Ana çerçeve */
+  position: relative; /* Pozisyon ayarlamaları için */
+}
+
+.wifi-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.left-divider, .right-divider {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 3px;
+  background-color: #39FF14; /* Neon yeşil çizgiler */
+  position: absolute;
+}
+
+.left-divider {
+  left: -6px; /* Sol çizgiyi ayarla */
+}
+
+.right-divider {
+  right: -6px; /* Sağ çizgiyi ayarla */
+}
+
+.logo {
+  max-width: 120px; /* Logo boyutu */
+  margin: 0 20px;
+}
+
+.network-info h2, .network-info p {
+  margin: 10px 0;
+}
+
+.qr-code {
+  /* QR kodunuzun stilini burada ayarlayın */
+  margin: 20px 0;
+}
+
+.scan-text {
+  margin-top: 20px;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .wifi-access-container {
+    padding: 10px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+
+  .left-divider, .right-divider {
+    height: 80%;
+  }
+}
+.wifi-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.wifi-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  padding: 10px;
+  background-color: #39FF14; /* Neon yeşil arka plan */
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover {
+  background-color: #26d548; /* Buton hover durumu */
+}
