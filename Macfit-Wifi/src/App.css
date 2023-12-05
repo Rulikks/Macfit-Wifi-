@@ -23,6 +23,7 @@ body, html {
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .left-divider, .right-divider {
@@ -44,22 +45,56 @@ body, html {
 
 .logo {
   max-width: 120px; /* Logo boyutu */
-  margin: 0 20px;
 }
 
-.network-info h2, .network-info p {
-  margin: 10px 0;
+.wifi-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px; /* Formun maksimum genişliğini sınırla */
 }
 
-.qr-code {
-  /* QR kodunuzun stilini burada ayarlayın */
-  margin: 20px 0;
+.wifi-form input, .wifi-form button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.scan-text {
-  margin-top: 20px;
-  font-style: italic;
-  opacity: 0.7;
+.wifi-form button {
+  background-color: #39FF14; /* Neon yeşil arka plan */
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.wifi-form button:hover {
+  background-color: #26d548; /* Buton hover durumu */
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* Arkaplan rengi beyaz */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.phone-prefix {
+  padding: 10px;
+  background-color: #e9e9e9; /* Önek arkaplan rengi */
+  color: #000; /* Önek yazı rengi */
+  margin-right: -1px; /* Sınır çakışmasını düzeltmek için */
+}
+
+.phone-input input[type="tel"] {
+  flex-grow: 1; /* Input alanının geri kalan alana yayılmasını sağla */
+  border: none; /* Tüm border'ları kaldır */
+  padding-left: 10px; 
+  border-radius: 5px; 
 }
 
 @media (max-width: 768px) {
@@ -75,30 +110,4 @@ body, html {
     height: 80%;
   }
 }
-.wifi-form {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0;
-}
 
-.wifi-form input {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.submit-btn {
-  padding: 10px;
-  background-color: #39FF14; /* Neon yeşil arka plan */
-  color: #000;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.submit-btn:hover {
-  background-color: #26d548; /* Buton hover durumu */
-}
