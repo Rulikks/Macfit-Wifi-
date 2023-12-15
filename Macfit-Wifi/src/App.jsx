@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import './App.css';
 import macfitLogo from './assets/macfit.png';
 import placeholderQRCode from './assets/frame.png';   
-import trainer from './assets/trainer.svg'
+import TrainerSvg from './assets/trainer.svg'; // SVG dosyasını import edin
 
 function App() {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [showQR, setShowQR] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false); // Eksik olan state tanımı
+  const [isSubmitted, setIsSubmitted] = useState(false); // Form gönderildiğinde bu durum güncellenecek
 
   const handleSubmit = (event) => {
     event.preventDefault(); 
@@ -35,13 +35,14 @@ function App() {
           <div className="right-divider"></div>
         </div>
         {isSubmitted ? (
-          <div className="success-message">
-            Başarılı şekilde giriş yaptınız, Macfit İnternet ile hızına hız kat!
-            
+          <div className="success-container">
+            <div className="success-message">
+              Başarılı şekilde giriş yaptınız, Macfit İnternet ile hızına hız kat!
+            </div>
+            <img src={TrainerSvg} alt="Trainer" className="trainer-svg" />
           </div>
         ) : (
           <>
-
             <h1>CONNECT TO WIFI</h1>    
 
             <form className="wifi-form" onSubmit={handleSubmit}>

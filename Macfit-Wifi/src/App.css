@@ -1,4 +1,4 @@
-body, html {
+ html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -11,14 +11,12 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center; 
-  background-repeat: no-repeat;
   backdrop-filter: blur(10px); 
   background-color: rgba(0, 0, 0, 0.5); 
 }
 .background {
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.5); 
-
 }
 
 .wifi-access-container {
@@ -128,5 +126,12 @@ body, html {
   font-size: 20px;
   margin-top: 20px;
 }
+.trainer-svg {
+  max-width: 300px; 
+  height: auto; 
+  display: block; 
+  margin: 20px auto; 
+}
+
 
 
