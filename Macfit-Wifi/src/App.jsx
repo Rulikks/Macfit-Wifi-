@@ -51,7 +51,7 @@ function App() {
               <div className="phone-input">
                 <span className="phone-prefix">+90</span>
                 <input 
-                  type="tel" 
+                  type="number" 
                   id="phone" 
                   name="phone" 
                   placeholder="555 555 55 55" 
